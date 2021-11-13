@@ -1,0 +1,73 @@
+:root {
+  --kasti-laius: 60vw; /*Veebilehte kuvavava kasti laius */
+  --kasti-kõrgus: 20vh; /*Veebilehte kuvava kasti kõrgus */
+  --dropdown-kõrgus: 40vh; /*Kasti kõrgus, mis kuvatakse peale dropdowni */
+}
+
+ 
+ /* Nupp */
+ .veebilehe-konteiner {
+    padding: 1vw;
+    font-size: 1vw;
+    border: none;
+    cursor: pointer;
+    width: var(--kasti-laius);
+    height: var(--kasti-kõrgus);
+    border-radius: 5px;
+  }
+  
+  .row {
+    display: flex;
+  }
+
+  /* Pilti hoiustav div */
+  .column-pilt {
+    flex: 50%;
+    border-right: grey 2pt solid;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .column-tekst {
+    flex: 50%;
+    padding: 20px;
+  }
+  
+  .veebilehe-konteiner:hover {
+    opacity: 0.9;
+  }
+  
+  /* Kõige välimine konteiner, mille järgi ülejäänud divid paika pannakse */
+  .välimine-konteiner {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 20vw;
+    padding-bottom: 5vh;
+  }
+  
+  /* Dropdown sisu, ehk div, mis ilmub peale nupule vajutamist */
+  .dropdown-sisu {
+    display: none;
+    position: absolute;
+    background-color: #eee9e034;
+    font-size: 1.5vw;
+    max-width: var(--kasti-laius);
+    max-height: var(--dropdown-kõrgus);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Läheb vaja JS jaoks */
+  .show {display:block;}
+
+  body {
+    font-family: 'Franklin Gothic Medium';
+  }
