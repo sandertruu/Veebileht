@@ -1,73 +1,181 @@
 :root {
-  --kasti-laius: 60vw; /*Veebilehte kuvavava kasti laius */
+  --kasti-laius: 70vw; /*Veebilehte kuvavava kasti laius */
   --kasti-kõrgus: 20vh; /*Veebilehte kuvava kasti kõrgus */
   --dropdown-kõrgus: 40vh; /*Kasti kõrgus, mis kuvatakse peale dropdowni */
+  --font-size: 1.5vw;
+  --tausta-värv: #2c3e50;
+  --sisu-tausta-värv: #FAFAFA;
 }
 
  
- /* Nupp */
- .veebilehe-konteiner {
-    padding: 1vw;
-    font-size: 1vw;
-    border: none;
-    cursor: pointer;
-    width: var(--kasti-laius);
-    height: var(--kasti-kõrgus);
-    border-radius: 5px;
-  }
-  
-  .row {
-    display: flex;
-  }
+/* Nupp */
+.veebilehe-konteiner {
+  padding: 1vw;
+  font-size: 1vw;
+  border: none;
+  cursor: pointer;
+  width: var(--kasti-laius);
+  height: var(--kasti-kõrgus);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
 
-  /* Pilti hoiustav div */
-  .column-pilt {
-    flex: 50%;
-    border-right: grey 2pt solid;
-    padding: 10px;
-    overflow: hidden;
-  }
+.row {
+  display: flex;
+}
 
-  img {
-    max-width: 100%;
-    max-height: 100%;
-  }
+/* Pilti hoiustav div */
+.column-pilt {
+  flex: 50%;
+  border-right: grey 2pt solid;
+  padding: 10px;
+  overflow: hidden;
+}
 
-  .column-tekst {
-    flex: 50%;
-    padding: 20px;
-  }
-  
-  .veebilehe-konteiner:hover {
-    opacity: 0.9;
-  }
-  
-  /* Kõige välimine konteiner, mille järgi ülejäänud divid paika pannakse */
-  .välimine-konteiner {
-    position: relative;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-left: 20vw;
-    padding-bottom: 5vh;
-  }
-  
-  /* Dropdown sisu, ehk div, mis ilmub peale nupule vajutamist */
-  .dropdown-sisu {
-    display: none;
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.img-logo {
+  min-width: 20vw;
+  min-height: 10vh;
+}
+
+.column-tekst {
+  flex: 50%;
+  padding: 20px;
+}
+
+.veebilehe-konteiner:hover {
+  opacity: 0.9;
+}
+
+/* Kõige välimine konteiner, mille järgi ülejäänud divid paika pannakse */
+.välimine-konteiner {
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 15vw;
+  padding-bottom: 2vh;
+  padding-top: 3vh;
+}
+
+/* Dropdown sisu, ehk div, mis ilmub peale nupule vajutamist */
+.dropdown-sisu {
+  display: none;
+  position: absolute;
+  background-color: var(--sisu-tausta-värv);
+  font-size: var(--font-size);
+  max-width: var(--kasti-laius);
+  max-height: var(--dropdown-kõrgus);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Läheb vaja JS jaoks */
+.show {display:block;}
+
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #3498db;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color: #e67e22;
+}
+
+body {
+	font-size: var(--font-size);
+	font-family: 'Franklin Gothic Medium';
+	background: var(--tausta-värv);
+}
+h1 {
+	text-align: center;
+	margin: 40px 0 40px;
+	text-align: center;
+	font-size: 12vh;
+	color: #ecf0f1;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: 'Franklin Gothic Medium';
+}
+
+p {
     position: absolute;
-    background-color: #eee9e034;
-    font-size: 1.5vw;
-    max-width: var(--kasti-laius);
-    max-height: var(--dropdown-kõrgus);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Läheb vaja JS jaoks */
-  .show {display:block;}
-
-  body {
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ecf0f1;
     font-family: 'Franklin Gothic Medium';
-  }
+    font-size: 16px;
+}
+
+span {
+    color: #2BD6B4;
+}
