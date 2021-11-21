@@ -12,7 +12,7 @@
 
     <nav>
         <a href="avaleht.html">Avaleht</a>
-        <a href="meedia.html">Meedia</a>
+        <a href="meelelahutus.html">Meelelahutus</a>
         <a href="pangandus.html">Pangandus</a>
         <a href="sotsiaalmeedia.html">Sotsiaalmeedia</a>
         <a href="meist.html">Meist</a>
@@ -20,6 +20,52 @@
     </nav>
 
     <div class="välimine-konteiner">
+        <button onclick="show_dropdown('facebook.com')" class="veebilehe-konteiner" style="background-color: #d2d442;">
+            <img src="images/facebook.svg" class="img-logo">
+        </button>
+        <div id="facebook.com" class="dropdown-sisu">
+            <div class="row">
+                <div class="column-pilt">
+                    <a href="https://et-ee.facebook.com/" target="_blank">
+                        <img src="images/facebook.png">
+                    </a>
+                </div>
+                <div class="column-tekst">
+                    Facebook on üks maailma suurimaid sotsiaalmeedia
+                    platvorme, millel on ligikaudu 3 miljardit aktiivset kasutajat.
+                    Tegemist on täieliku sotsiaalelu paketiga, kuhu on kokku toodud
+                    kõik mõeldavad sotsiaalsed teenused ja vidinad.
+                    <h2></h2>
+                    <strong>OHUD: Mittefiltreeritud sisu, ei sobi väikelastele, radikaliseerumist soodustav</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="välimine-konteiner">
+        <button onclick="show_dropdown('instagram.com')" class="veebilehe-konteiner" style="background-color: #91ccb6;">
+            <img src="images/instagram.svg" class="img-logo">
+        </button>
+        <div id="instagram.com" class="dropdown-sisu">
+            <div class="row">
+                <div class="column-pilt">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="images/instagram.png">
+                    </a>
+                </div>
+                <div class="column-tekst">
+                    Instagram on samuti üks suurimaid sotsiaalmeedia platvorme. See on keskendunud
+					peamiselt piltide ja videote postitamisele, kuid lisaks sellele on võimalik inimestega
+					suhelda, tegeleda müügiga, tuua suurema publiku ette mingeid probleeme, algatada
+					heategevuslikke tegevusi jne.
+                    <h2></h2>
+                    <strong>OHUD: Küberkiusamine, ebatervislikke normide loomine noorte seas</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="välimine-konteiner">
         <button onclick="show_dropdown('placeholder.ee')" class="veebilehe-konteiner" style="background-color: #91ccb6;">
             <img src="images/placeholder.svg" class="img-logo">
         </button>
@@ -38,6 +84,7 @@
             </div>
         </div>
     </div>
+	
 </body>
 
 </html>
