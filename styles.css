@@ -80,6 +80,7 @@ img {
 /* Läheb vaja JS jaoks */
 .show {display:block;}
 
+/*Navbariga seonduv on võetud https://codepen.io/Patak/pen/QpLpOV/ ja kohandatud vastavalt vajadusele */
 nav {
 	margin: 27px auto 0;
 	position: relative;
@@ -156,6 +157,7 @@ body {
 	font-family: 'Franklin Gothic Medium';
 	background: var(--tausta-värv);
 }
+
 h1 {
 	text-align: center;
 	margin: 40px 0 40px;
@@ -180,13 +182,38 @@ span {
     color: #2BD6B4;
 }
 
-
+/*Meist vahelehehe peamine div */
 .tutvustus {
-	position: absolute;
-    bottom: 200px;
-	left: 700px;
-	width: 700px;
-	height: 300px;
-	border: 15px solid rgb(77, 77, 77);
-	text-align:right
+	margin-top: 3vh;
+	border: 2vh solid rgb(77, 77, 77);
+	position: fixed;
+	display: flex;
+	max-height: 55vh;
   }
+
+/*Meist vahelehel asuva teksti parent div */
+.tutvustus-tekst {
+  	padding: 7vh;
+	font-size: 3vh;
+	text-align: center;
+	float: right;
+	flex: 65%;
+	color: #FAFAFA;
+	vertical-align: center;
+}
+
+/*Meist vahelehel asuvat pilti kontrolliv img */
+.tutvustus-pilt {
+	float: left;
+	object-fit: cover;
+	flex: 35%;
+	max-width: 25vw;
+	max-height: auto;
+	min-width: 15vw;
+	min-height: auto;
+}
+
+/*Meist vahelelehel asuv hüperlink githubi */
+.github-link {
+	color: green;
+}
