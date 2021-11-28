@@ -208,7 +208,6 @@ span {
 	object-fit: cover;
 	flex: 35%;
 	max-width: 25vw;
-	max-height: auto;
 	min-width: 15vw;
 	min-height: auto;
 }
