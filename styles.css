@@ -179,3 +179,14 @@ p {
 span {
     color: #2BD6B4;
 }
+
+
+.tutvustus {
+	position: absolute;
+    bottom: 200px;
+	left: 700px;
+	width: 700px;
+	height: 300px;
+	border: 15px solid rgb(77, 77, 77);
+	text-align:right
+  }
