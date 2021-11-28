@@ -16,8 +16,8 @@ on võrdluse lihtsustamiseks toodud välja ka ohud ja kirjeldus.*
 veeblilehtedest ning viimaks ka tutvustav vaheleht meist.*
 
 ## Tiim
-*Joosep Orasmäe (https://github.com/fent665) - Veebilehe üldine disain, avahelehe sisu
-Sander Truu (https://github.com/sandertruu) - Meelelahutus ja sotsiaalmeedia vahelehtedede sisu, kommunikatsiooni organisaator
+*Joosep Orasmäe (https://github.com/fent665) - Veebilehe üldine disain, avahelehe sisu  
+Sander Truu (https://github.com/sandertruu) - Meelelahutus ja sotsiaalmeedia vahelehtedede sisu, kommunikatsiooni organisaator  
 Ilmar Möls (https://github.com/IlmarMols)* - Pangandus ja Meist vahelehtede sisu
 
 ***Tule ja leia omale vajalikud veebilehed meilt!***
