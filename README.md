@@ -21,3 +21,4 @@ Sander Truu (https://github.com/sandertruu) - Meelelahutus ja sotsiaalmeedia vah
 Ilmar Möls (https://github.com/IlmarMols)* - Pangandus ja Meist vahelehtede sisu
 
 ***Tule ja leia omale vajalikud veebilehed meilt!***
+***https://kodu.ut.ee/~ssanderr/Veebileht/avaleht.html***
